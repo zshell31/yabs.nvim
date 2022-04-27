@@ -16,9 +16,9 @@ local did_setup = false
 
 function Yabs.run_command(...)
   local args = { ... }
-  local cmd = args[1]
-  local output = args[2]
-  local opts = args[3]
+  local cmd = args[2]
+  local output = args[3]
+  local opts = args[4]
 
   output = output or Yabs.default_output
   utils.run_command(cmd, output, opts)
